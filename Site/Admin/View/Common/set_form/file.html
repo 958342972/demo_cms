@@ -1,0 +1,23 @@
+<dl>
+    <dt>{$form.title} <span class="tip">[字段名：{$form.name}]</span></dt>
+    <dd>
+        <script src="__PLUG__/upimg/upfile.js"></script>
+        <input type="hidden" name="{$form.name}[function]" value="array_to_json"><!--根据function 对应使用函数-->
+        <div id="{$form.name}upPicker" class="upfile">点击上传文件<input type='file' class="file" id='{$form.name}file' name='file'></div>
+        <div id="{$form.name}imglist" class="imglist"></div>
+        <script type="text/javascript">
+            var id="{$form.name}";
+            var upurl="{:U('Common/upload_file')}";
+            var imglist='{$form.value|json_to_imgarr|array_to_json}';
+            var field='{$form.name}[]';
+            var imgNum=1;
+            $('#'+id+'upPicker').upfile({upUrl:upurl,imgField:field,prefix:id,imgNum:imgNum,imgListID:'#'+id+'imglist'}).beautify();
+            if(imglist){
+                var imgdata=eval('(' + imglist + ')');
+                $.each(imgdata,function(i,n) {
+                    $('#imglist').upfile({imgField: field, imgListID: '#' + id + 'imglist'}).imglist(n);
+                })
+            }
+        </script>
+    </dd>
+</dl>

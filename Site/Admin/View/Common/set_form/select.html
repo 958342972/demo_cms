@@ -1,0 +1,17 @@
+<dl>
+    <dt>{$form.title} <span class="tip">[字段名：{$form.name}]</span></dt>
+    <dd id="{$form.name}">
+        <select name="{$form.name}" class="select form-control">
+        <foreach name="form[options]" item="vo">
+                <option value="{$key}">{$vo}</option>
+        </foreach>
+        </select>
+    </dd>
+</dl>
+<script type="text/javascript">
+    $(function(){
+        var id='#'+'{$form.name}';
+        var $value='{$form.value}';
+        $(id).find('option').lande('selected',{'value':$value});
+    })
+</script>

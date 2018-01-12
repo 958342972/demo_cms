@@ -1,0 +1,25 @@
+<dl>
+    <dt>{$form.title} <span class="tip">[字段名：{$form.name}]</span></dt>
+    <dd>
+        <link rel="stylesheet" href="__PLUG__/datetimepicker/jquery.datetimepicker.css">
+        <script type="text/javascript" src="__PLUG__/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+        <input type="text" name="{$form.name}" id="{$form.name}" class="int_text int">
+        <script type="text/javascript">
+            $(function () {
+                var time='{$form.value}';
+                var add_time="{:date('Y-m-d H:i:s',time())}";
+                if(time){
+                    add_time="{$form.value|date='Y-m-d H:i:s',###}";
+                }
+                $('#{$form.name}').val(add_time);
+                $.datetimepicker.setLocale('ch');//设置中文
+                $('#{$form.name}').datetimepicker({
+                    format:	'Y-m-d H:i:s',
+                    formatTime:	'H:i:s',
+                    formatDate:	'Y-m-d',
+                    timepickerScrollbar:false
+                });
+            })
+        </script>
+    </dd>
+</dl>

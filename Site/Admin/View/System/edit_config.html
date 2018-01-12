@@ -1,0 +1,102 @@
+<extend name='Common:body'  />
+
+<block name='right_title'>
+<div class="right-title">
+	<span class='glyphicon glyphicon-home'></span><a href="{:U('System/index')}">配置管理</a> / {$mtitle}
+</div>
+</block>
+{// 右侧操作项 }
+<block name='operate'></block>
+{// 右侧操作项 end }
+
+
+{// 右侧内容 }
+<block name='content_right'>
+<div class="right_edit">
+	<form action="" enctype="multipart/form-data" method="post" id="submit-form">
+		<div class="form_list">
+			<dl>
+				<dt>名称</dt>
+				<dd><input type="text" name="name" value="{$edit.name}" class="int_text int"> <span class='color-red'>&nbsp;*</span></dd>
+			</dl>
+			<dl>
+				<dt>标题</dt>
+				<dd><input type="text" name="title" value="{$edit.title}" class="int_text int"> <span class='color-red'>&nbsp;*</span></dd>
+			</dl>
+			<dl>
+				<dt>表单类型</dt>
+				<dd>
+					<select name="type" class="form-control select" id="item_type">
+						<option value="0">请选择</option>
+						<volist name="form_type" id="vo">
+							<option value="{$key}" data-field="{$vo[1]}" >{$vo[0]}</option>
+						</volist>
+					</select>
+					<script type="text/javascript">
+						$(function(){
+							var form_type='{$edit.type}';
+							$('#item_type option').lande('selected',{value:form_type});
+							var group='{$edit.group}';
+							$('#group option').lande('selected',{value:group});
+						})
+					</script>
+				</dd>
+			</dl>
+			<dl>
+				<dt>配置分组</dt>
+				<dd>
+					<select name="group" class="form-control select" id="group">
+						<option value="0">请选择</option>
+						<volist name="config_group" id="vo">
+							<option value="{$key}" >{$vo}</option>
+						</volist>
+					</select>
+
+				</dd>
+			</dl>
+			<dl>
+				<dt>表单说明</dt>
+				<dd><input type="text" name="remark" class="int_text int" value="{$edit.remark}"></dd>
+			</dl>
+			<dl>
+				<dt>额外选项（额外选项radio/select等需要配置此项,每行一个参数值）</dt>
+				<dd><textarea name="options"  class="textarea">{$edit.options}</textarea></dd>
+			</dl>
+			<dl>
+				<dt>状态</dt>
+				<dd>
+					<input type="radio" id="ok" name='status' checked="checked" value="1"> <label for='ok' class="label">开启</label> &nbsp; 
+					<input type="radio" id="no" value="0" name='status'> <label for='no' class="label">关闭</label> 
+				</dd>
+			</dl>
+			<dl>
+				<dt>排序</dt>
+				<dd>
+					<input type="text"  name='sort' value="{$edit.sort}" class="int" style="width:65px">
+				</dd>
+			</dl>
+			<dl>
+				<dt>多语言</dt>
+				<dd id="is_lang">
+					<label class="label"><input type="radio" name='is_lang'  value="1"> 是</label> &nbsp;
+					<label class="label"><input type="radio" value="0" checked="checked" name='is_lang'> 否</label>
+					<script type="text/javascript">
+						$(function () {
+							var is_lang='{$edit.is_lang}';
+							$('#is_lang').lande('radio',{value:is_lang,defaults:1})
+						})
+					</script>
+				</dd>
+			</dl>
+		</div>
+
+		<div class="form_action">
+			<input type="hidden" name="id" value="{$edit.id}">
+			<input type="submit" class="sub pull-left btn"  value="提交">
+			<a href="{:U('index')}" class="ret pull-left btn">返回</a>
+		</div>
+	</form>
+</div>
+
+</block>
+{// 右侧内容 end }

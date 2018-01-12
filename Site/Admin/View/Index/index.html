@@ -1,0 +1,60 @@
+<extend name="Common:body" />
+<block name="left_list">
+    <include file="Common/category_left" />
+</block>
+<block name="operate"></block>
+<block name='right_title'></block>
+<block name='content_right'>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default" >
+                <div class="panel-heading">关于LDCMS</div>
+                <div class="panel-body">
+                    <p>竹子网站管理系统(简称：LDCMS)是一套互联网+解决方案的企业网站管理系统。致力于搭建一个完善的企业级应用生态环境以适应不同行业用户的需求。</p>
+                    <p>LDCMS是苏州竹子网络科技 ( <a href="http://www.zhuziweb.com/" target="_blank" style="color:#287dde">zhuziweb.com</a> ) 开发的一款基于php的企业网站管理系统，苏州竹子网络科技是一家一直致力于以“专注网站，用心服务”为中心价值，坚持创新、诚信、客户至上原则，提供客户最需要的服务。希望通过发挥我们的专业知识，重塑中小企业网络形象，为客户打造满意的产品以客户的利益最大化为目标，为各型企业提供网上网下全方位的网站建设服务。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default" >
+                <div class="panel-heading">系统信息</div>
+                <table class="table">
+                    <tr>
+                        <td>服务器操作系统</td>
+                        <td>{$Think.const.PHP_OS}</td>
+                    </tr>
+                    <tr>
+                        <td>PHP版本</td>
+                        <td>{$Think.const.PHP_VERSION}</td>
+                    </tr>
+                    <tr>
+                        <td>运行环境</td>
+                        <td>
+                            {$server_software[0]}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MYSQL版本</td>
+                        <td>{$system_info_mysql.0.v}</td>
+                    </tr>
+                    <tr>
+                        <td>上传限制</td>
+                        <td>{:ini_get('upload_max_filesize')}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default" >
+                <div class="panel-heading">产品团队</div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</block>

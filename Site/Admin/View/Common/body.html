@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{$meta_title}-{:C('SYSTEM_SITENAME')}-后台管理</title>
+    <script type="text/javascript" src="__JS__/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-form.js"></script>
+    <script type="text/javascript" src="__JS__/default.js"></script>
+    <script type="text/javascript" src="__PLUG__/layer/layer.js"></script>
+    <script type="text/javascript" src="__PLUG__/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__JS__/landecms_layout.js"></script>
+    <script type="text/javascript" src="__PLUG__/upimg/upimg.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PLUG__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PLUG__/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/common.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/layout.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/iconfont/iconfont.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="head-fixed">
+<div class="head navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="logo pull-left">
+            <img src="__IMG__/logo.png" alt="">
+        </div>
+        <div class="nav_list pull-left">
+            <ul>
+                <foreach name='menu_level' item='list'>
+                    <li>
+                        <a href="{$list.name|U}" <if condition="$list['id'] eq $current">class="on"</if> >{$list.title}</a>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+        <div class="pull-right">
+            <!-- 语言版本 -->
+            <div class="pull-left dropdown">
+                <button type="button" class="btn btn-topaln lang" data-toggle="dropdown" ><i class="fa fa-globe"></i>&nbsp;&nbsp;{$default_lang}
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <foreach name="lang_list" item="vo">
+                        <li><a href="{:U('Common/change_lang',array('lang'=>$key))}" class="chang_lang">{$vo}</a></li>
+                    </foreach>
+                    <script type="text/javascript">
+                        $('.chang_lang').lande('action');
+                    </script>
+                </ul>
+            </div>
+            <!-- 管理员 -->
+            <div class="pull-left">
+                <div class="btn btn-topaln dropdown-toggle userinfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class='fa  fa-tachometer'></i>&nbsp;&nbsp;{$username}&nbsp;&nbsp;<i class="caret"></i>
+                </div>
+                <ul class="dropdown-menu dropdown-menu-right">
+
+                    <li>
+                        <a href="{:U('User/updatepass')}">
+                            <span class='fa fa-key'></span>&nbsp;&nbsp;修改密码</a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="{:U('Login/layout')}" id="lyout">
+                            <span class='glyphicon glyphicon-log-out'></span>&nbsp;&nbsp;退出</a>
+                        <script type="text/javascript">
+                            $('#lyout').lande('action');
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="container-left fixed-left posrel">
+        <!--<div class="left_nav_toggle posabs" id='left_nav_toggle'>-->
+        <!--<div class="bg show"></div>-->
+        <!--<span class='fa fa-angle-double-left'></span>-->
+        <!--</div>-->
+        <div class="left_nav pull-left">
+            <ul>
+                <li>
+                    <a href="{:U('category/index')}">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        <p>栏目管理</p>
+                    </a>
+                </li>
+                <foreach name='menu_quick' item='level2'>
+                    <li>
+                        <a href="{$level2.category_url|U}">
+                            <span class="{$level2.icon}"></span>
+                            <p>{$level2.name}</p>
+                        </a>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+        <div class="left_con_list pull-right">
+            <div class="left-quick">
+                <ul>
+                    <li><a href="{:U('/index')}" target="_blank" class="home" title="网站首页"><i class="iconfont iconfont-home"></i></a></li>
+                    <li><a href="" class="user" title="会员中心"><i class="iconfont iconfont-user"></i></a></li>
+                    <li><a href="{:U('Common/clear_cache')}" class="remove" title="清理缓存"><i class="iconfont iconfont-clear"></i></a></li>
+                    <script type="text/javascript">
+                        $('.remove').lande('action');
+                    </script>
+                </ul>
+            </div>
+            {// 左侧列表 }
+            <div class="left_list">
+                <block name='left_list'>
+
+                    <ul class="list">
+                        <foreach name='menu_level3' item='level3'>
+                            <li>
+                                <a href="{$level3.name|U}"><i class='ico fa fa-caret-right '></i>{$level3.title}</a>
+                            </li>
+                        </foreach>
+                    </ul>
+
+                </block>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container-right">
+
+        <div class="main posrel">
+            <block name='right_title'>
+                <div class="right-title">
+                    <span class='glyphicon glyphicon-home'></span>后台首页
+                </div>
+            </block>
+            <div class="main-content">
+                <block name='operate'>
+                </block>
+                <!-- 操作项 end -->
+
+                <block name='content_right'>
+                </block>
+
+            </div>
+            <!--main-content end-->
+            <div class="copyright">
+                <div class="pull-left">
+                    感谢使用{:C('SYSTEM_SITENAME')}
+                </div>
+                <div class="pull-right">
+                    版本：{:C('LDCMS_VERSION')}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--container-right end-->
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#submit-form').lande('ajaxForm');
+        $('#checkall').lande('clickall');
+        $('.click_del').lande('del_one');
+        $('#del_num').lande('del_num',{classname:'.check'});
+        $(window).resize(function(){
+            $(".main").css("min-height", $(window).height() - 55);
+        }).resize();
+    })
+
+</script>
+
+
+</body>
+</html>

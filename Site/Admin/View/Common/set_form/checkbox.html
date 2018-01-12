@@ -1,0 +1,17 @@
+<dl>
+    <dt>{$form.title} <span class="tip">[字段名：{$form.name}]</span></dt>
+    <dd id="{$form.name}">
+        <input type="hidden" name="{$form.name}[function]" value="array_to_json"><!--根据function 对应使用函数-->
+        <foreach name="form[options]" item="vo">
+            <label class="label"><input type="{$form.type}" name="{$form.name}[]" value="{$key}">
+            {$vo}</label>&nbsp;&nbsp;
+        </foreach>
+    </dd>
+</dl>
+<script type="text/javascript">
+    $(function(){
+        var id='#'+'{$form.name}';
+        var $value='{$form.value}';
+        $(id).lande('checkbox',{'value':$value});
+    })
+</script>

@@ -1,0 +1,329 @@
+[ 2017-11-17T19:26:42+08:00 ] ::1 /test/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `tp_manage` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\test\Include\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `tp_manage` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `tp_manage` SET `last_login_time`='1510918002',`last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-11-17T19:39:57+08:00 ] ::1 /test/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_manage` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\test\Include\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `tp_manage` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `tp_manage` SET `last_login_time`='1510918797',`last_login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-11-17T20:19:24+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:26:28+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:26:29+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:26:51+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:26:52+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:27:32+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:27:32+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:30:23+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:30:23+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:30:39+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:30:40+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:31:35+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:33:03+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:33:57+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:37:12+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:37:38+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:37:45+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:39:33+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:40:11+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:42:21+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:42:23+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:42:50+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:44:42+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:45:00+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:45:37+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:47:26+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:50:26+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:50:38+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:50:38+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:51:28+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:51:28+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:51:42+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:51:42+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:52:14+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:52:15+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T20:52:40+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T20:52:40+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T21:09:19+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T21:09:19+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T21:10:43+08:00 ] ::1 /test/Admin/Category/ajax_category.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Category
+
+[ 2017-11-17T21:10:44+08:00 ] ::1 /test/Admin/Index/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T21:10:50+08:00 ] ::1 /test/Admin/index.js.map
+ERR: 无法加载控制器:Index.js.map
+
+[ 2017-11-17T21:16:00+08:00 ] ::1 /test/Admin/Common/clear_cache.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:clear_cache
+
+[ 2017-11-17T21:16:09+08:00 ] ::1 /test/Admin/Common/clear_cache.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:clear_cache
+
+[ 2017-11-17T21:16:11+08:00 ] ::1 /test/Admin/Common/clear_cache.html
+ERR: 非法操作:clear_cache
+
+[ 2017-11-17T21:28:48+08:00 ] ::1 /test/Admin/system
+ERR: 1146:Table 'test.tp_system_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_system_config`
+
+[ 2017-11-17T21:34:47+08:00 ] ::1 /test/Admin/system
+ERR: 1146:Table 'test.tp_system_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_system_config`
+
+[ 2017-11-17T21:34:49+08:00 ] ::1 /test/Admin/system
+ERR: 1146:Table 'test.tp_system_config' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_system_config`
+
+[ 2017-11-17T21:47:39+08:00 ] ::1 /test/Admin/System/add_config.html
+ERR: 模板不存在:./Site/Admin/View/System/add_config.html
+
+[ 2017-11-17T22:07:46+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:07:55+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:07:58+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:07:59+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:35:39+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:35:42+08:00 ] ::1 /test/Admin/System/add_config.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_config` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\phpStudy\WWW\test\Site\Admin\Controller\SystemController.class.php on line 36 and defined D:\phpStudy\WWW\test\Include\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 339 行.
+ERR: Think\Model:validata方法不存在！
+
+[ 2017-11-17T22:36:50+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:36:58+08:00 ] ::1 /test/Admin/System/index.js.map
+ERR: 非法操作:index.js.map
+
+[ 2017-11-17T22:37:00+08:00 ] ::1 /test/Admin/System/add_config.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tp_config` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\phpStudy\WWW\test\Site\Admin\Controller\SystemController.class.php on line 36 and defined D:\phpStudy\WWW\test\Include\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 339 行.
+
+[ 2017-11-17T22:37:12+08:00 ] ::1 /test/Admin/System/add_config.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_config` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\phpStudy\WWW\test\Site\Admin\Controller\SystemController.class.php on line 36 and defined D:\phpStudy\WWW\test\Include\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `tp_config` WHERE `name` = '额外若群若群' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-17T22:38:28+08:00 ] ::1 /test/Admin/System/add_config.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_config` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\phpStudy\WWW\test\Site\Admin\Controller\SystemController.class.php on line 36 and defined D:\phpStudy\WWW\test\Include\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\test\Include\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `tp_config` WHERE `name` = '额外若群若群' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\test\Include\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

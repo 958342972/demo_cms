@@ -1,0 +1,93 @@
+<extend name='Common:body'  />
+<block name='right_title'>
+	<div class="right-title">
+		<span class='glyphicon glyphicon-home'></span>{$meta_title}
+	</div>
+</block>
+
+<block name='operate'>
+	<!-- 操作项 -->
+	<div class="operate">
+		<div class="pull-left">
+			<a href="{:U('add_config')}" class="btn btn-warning">添加</a>
+			<a href="{:U('del_config')}" class="btn btn-danger" id="del_num">删除</a>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary">选择分组</button>
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="{:U('index')}"><b>全部</b></a></li>
+					<volist name="config_group" id="vo">
+						<li><a href="{:U('index',array('group'=>$key))}">{$vo}</a></li>
+					</volist>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</block>
+
+{// 右侧内容 }
+<block name='content_right'>
+	<link rel="stylesheet" type="text/css" href="__CSS__system.css">
+	<div class="table-responsive">
+		<table class="table table-hover table-bordered table-striped" id='list'>
+			<thead>
+			<tr>
+				<th width="2%"><input type="checkbox" id="checkall"></th>
+				<th width="5%">编号</th>
+				<th >字段名</th>
+				<th width="15%">字段标题</th>
+				<th width="8%">类型</th>
+				<th width="6%">分组</th>
+				<th>添加时间</th>
+				<th width="7%">排序</th>
+				<th width="4.5%">状态</th>
+				<th width="15%">操作</th>
+			</tr>
+			</thead>
+			<tbody>
+
+			<volist name='configlist' id='list' key="k">
+				<tr class="rows" val="{$list.path}">
+					<td><input type="checkbox" class="check" name="id[]" value="{$list.id}"></td>
+					<td><span style="color: #999;">{$list.id}</span></td>
+					<td>{$list.name}</td>
+					<td>{$list.title} {$list.is_lang|is_lang}</td>
+					<td>{$list.type|get_field_type}</td>
+					<td>{$list.group|get_config_group}</td>
+					<td>{$list.ctime|date='Y-m-d',###}</td>
+					<td><input type="text" name="{$list.id}" old="{$list.sort}" value="{$list.sort}" class="mini-text sort"></td>
+					<td>
+						<eq name='list.status' value='1'>
+							&nbsp;&nbsp;<i class='fa fa-check ok'></i>
+							<else/>
+							&nbsp;&nbsp;<i class='fa fa-ban ban'></i>
+						</eq>
+					</td>
+					<td>
+						<a href="{:U('System/edit_config',array('id'=>$list['id']))}" class="list_but btn-success">编辑</a>
+						<if condition="$list['status'] eq 1">
+							<a href="{:U('ajax_config_status',array('id'=>$list['id'],'status'=>0))}" class="list_but btn-gray ajax_status">禁用</a>
+							<else />
+							<a href="{:U('ajax_config_status',array('id'=>$list['id'],'status'=>1))}" class="list_but btn-primary ajax_status">启用</a>
+						</if>
+						<a href="{:U('del_config',array('id'=>$list['id']))}" class="list_but butbg3 click_del" >删除</a>
+					</td>
+				</tr>
+			</volist>
+
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var order_url='{:U("ajax_sort",array("group"=>I("group")))}';
+			$('.sort').lande('sort',{idclass:'.check',url:order_url});
+			$('.ajax_status').lande('status');
+		})
+	</script>
+</block>
+{// 右侧内容 end }

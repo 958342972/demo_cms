@@ -1,0 +1,16 @@
+<dl>
+    <dt>{$form.title}{$form.tip}</dt>
+    <dd id="{$form.name}">
+        <foreach name="form[options]" item="vo">
+            <label class="label"><input type="{$form.type}" name="{$form.name}" value="{$key}">
+            {$vo}</label>&nbsp;&nbsp;
+        </foreach>
+    </dd>
+</dl>
+<script type="text/javascript">
+    $(function(){
+        var id='#'+'{$form.name}';
+        var $value='{$form.value}';
+        $(id).lande('radio',{'value':$value});
+    })
+</script>

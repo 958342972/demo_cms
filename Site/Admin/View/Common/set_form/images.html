@@ -1,0 +1,26 @@
+<dl>
+    <dt>{$form.title} <span class="tip">[字段名：{$form.name}]</span></dt>
+    <dd>
+        <input type="hidden" name="{$form.name}[function]" value="array_to_json"><!--根据function 对应使用函数-->
+        <button class="btn btn-primary {$form.name}browseFile pull-left" style="margin-right:10px;">选择站内图片</button>
+        <div id="{$form.name}upPicker" class="upPicker btn btn-success">点击上传图片<input type='file' class="file" id='{$form.name}file' name='file'></div>
+        <div id="{$form.name}imglist" class="imglist"></div>
+        <script type="text/javascript">
+            var id="{$form.name}";
+            var upurl="{:U('Common/upload')}";
+            var imglist='{$form.value|json_to_imgarr|array_to_json}';
+            var field='{$form.name}[]';
+            var imgNum='{$form["options"][0]}';
+            $('#'+id+'upPicker').upimg({upUrl:upurl,imgField:field,prefix:id,imgNum:imgNum,imgListID:'#'+id+'imglist'}).beautify();
+            if(imglist){
+                var imgdata=eval('(' + imglist + ')');
+                $.each(imgdata,function(i,n){
+                    $('#{$form.name}imglist').upimg({imgField:field,imgListID:'#'+id+'imglist'}).imglist(n);
+                })
+            }
+
+            $('.{$form.name}browseFile').upimg().browseFile("{:U('Common/browseFile',array('type'=>'images','imglistid'=>$form['name'].'imglist','imgfield'=>$form['name']))}")
+
+        </script>
+    </dd>
+</dl>

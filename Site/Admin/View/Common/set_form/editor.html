@@ -1,0 +1,7 @@
+<dl>
+    <dt>{$form.title} <span class="tip">[字段名：{$form.name}]</span></dt>
+    <dd>
+        <textarea name="{$form.name}" id="{$form.name}" cols="30" rows="10">{$form.value}</textarea>
+        {:editor($form['name'])}
+    </dd>
+</dl>

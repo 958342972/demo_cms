@@ -1,0 +1,20 @@
+.color-red{color:red;}
+.clear{clear:both;}
+.ok{color: #6AAD12 !important}
+.ban{color: #C9302C !important}
+.butbg0{background: #999 !important; color: #ccc !important;}
+.butbg1{background: #4F92DE !important}
+.butbg2{background: #8CC33E !important}
+.butbg3{background: #FFA433 !important}
+.butbg1:hover{background: #317CCE !important;color:#fff;}
+.butbg2:hover{background: #64A017 !important;color:#fff;}
+.butbg3:hover{background: #F08B0F !important;color:#fff;}
+.list_but{padding:3px 10px;display: inline-block;color:#fff;font-size:12px}
+#page{float:right;}
+#page .rows{float: left;border:1px solid #ccc;padding:2px 10px;margin-right:5px;}
+#page .current{background: #ed6708;border:1px solid #f50 !important;color:#fff;}
+#page .current,#page a{border:1px solid #ccc;padding:2px 10px;float:left;margin-right:5px;}
+.btn-gray{background-color:#999999;border-color: #8D8D8D;}
+.btn-gray:hover{background-color:#777;border-color: #666;color: #fff}
+.btn-topaln{background-color: #333645;border-color: #333645;color:#fff}
+.btn-topaln:hover{background-color:#3e425a;border-color: #3e425a;color: #fff}
