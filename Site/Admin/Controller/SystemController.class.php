@@ -43,9 +43,15 @@ class SystemController extends CommonController
                 array('name','require','名称不能为空'),
                 array('name','','名称已存在',0,'unique',1),
                 array('title','require','标题不能为空'),
+                array('type','require','表单类型不能为空'),
             );
             if($db->auto($rules)->validate($validate)->create($data)){
-                p($data);
+                p($data);die;
+                if($db->add()){
+                    $this->success('添加成功！',U('index'));
+                }else{
+                    $this->error('添加失败！');
+                }
             }else{
                 $this->error($db->getError());
             }

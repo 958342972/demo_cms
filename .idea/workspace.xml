@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f3dc3f65-2c58-4c72-a702-74f40f66c693" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/d97cd5fe7416b2bd368ee2dab10727ef.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/d97cd5fe7416b2bd368ee2dab10727ef.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Logs/Admin/18_01_12.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Admin/18_01_12.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Logs/Common/18_01_12.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Common/18_01_12.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/Admin/Controller/SystemController.class.php" afterPath="$PROJECT_DIR$/Site/Admin/Controller/SystemController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/Admin/View/System/edit_config.html" afterPath="$PROJECT_DIR$/Site/Admin/View/System/edit_config.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="SystemController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Site/Admin/Controller/SystemController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="266">
+              <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
               </folding>
@@ -230,12 +230,12 @@
       <workItem from="1510753661344" duration="5382000" />
       <workItem from="1510797820633" duration="252000" />
       <workItem from="1510917908835" duration="12227000" />
-      <workItem from="1515761354975" duration="1765000" />
+      <workItem from="1515761354975" duration="3500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54530000" />
+    <option name="totallyTimeSpent" value="56265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -440,8 +440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Site/Admin/Controller/SystemController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="266">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
