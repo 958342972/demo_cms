@@ -34,6 +34,7 @@ class SystemController extends CommonController
         $db = M($this->table);
         if(IS_POST){
             $data = I();
+            $data['name'] = strtoupper(I('name'));
             $rules = array(
                 array('status','1'),
                 array('create_time','time',1,'function'),
@@ -44,7 +45,7 @@ class SystemController extends CommonController
                 array('title','require','标题不能为空'),
             );
             if($db->auto($rules)->validate($validate)->create($data)){
-
+                p($data);
             }else{
                 $this->error($db->getError());
             }

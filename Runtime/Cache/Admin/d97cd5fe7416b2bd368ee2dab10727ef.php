@@ -141,7 +141,7 @@
 		<div class="form_list">
 			<dl>
 				<dt>名称</dt>
-				<dd><input type="text" name="name" value="<?php echo ($edit["name"]); ?>" class="int_text int"> <span class='color-red'>&nbsp;*</span></dd>
+				<dd><input type="text" name="name" value="<?php echo ($edit["name"]); ?>" class="int_text int" style="text-transform:uppercase;"> <span class='color-red'>&nbsp;*</span></dd>
 			</dl>
 			<dl>
 				<dt>标题</dt>
@@ -176,7 +176,7 @@
 			</dl>
 			<dl>
 				<dt>表单说明</dt>
-				<dd><input type="text" name="tip" class="int_text int" value="<?php echo ($edit["tip"]); ?>"></dd>
+				<dd><input type="text" name="remark" class="int_text int" value="<?php echo ($edit["remark"]); ?>"></dd>
 			</dl>
 			<dl>
 				<dt>额外选项（额外选项radio/select等需要配置此项,每行一个参数值）</dt>
